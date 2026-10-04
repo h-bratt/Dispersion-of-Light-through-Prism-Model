@@ -1,10 +1,10 @@
 extends Node2D
 
-var a = deg_to_rad(45)
-var i = deg_to_rad(7)
+var a = deg_to_rad(45) #angle of incidence
+var i = deg_to_rad(7) #angle in prism
 var ns = [1.513,1.516,1.517,1.519,1.522,1.524,1.529] #from graph
 var ts = []
-var N = 1.52
+var N = 1.52 #refractive index of crown glass
 var colours = ["red","orange","yellow","green","cyan","blue","violet"]
 
 var ll=320
@@ -16,7 +16,8 @@ var y = 0
 
 func _ready():
 	do()
-func do():
+
+func do(): #draws prism
 	n.queue_free()
 	n = Node.new()
 	add_child(n)
@@ -57,7 +58,8 @@ func do():
 		l.width = 1
 		l.default_color = colours[t]
 		l.points = [Vector2(X,Y),Vector2(X+500,m*(X+500)+c)]
-func _process(delta):
+		
+func _process(delta): #updates angles when enter key pressed
 	if Input.is_action_just_pressed("ui_accept") and int($ii.text) <= 90 and int($ii.text) >= 0 and int($a.text) <= 180 and int($a.text) >= 0:
 		a = deg_to_rad(int($a.text))
 		i = deg_to_rad(int($ii.text))
