@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://blg7bfqt1vhyk"]
+
+[ext_resource type="Script" path="res://main_scene.gd" id="1_natug"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_natug")
+
+[node name="tri1" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 1.0
+
+[node name="tri2" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 1.0
+
+[node name="tri3" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 1.0
+
+[node name="i" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 1.0
+
+[node name="mid" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 1.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 115)
+
+[node name="normal1" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 1.0
+default_color = Color(0.494118, 0.494118, 0.494118, 1)
+
+[node name="normal2" type="Line2D" parent="."]
+width = 1.0
+default_color = Color(0.494118, 0.494118, 0.494118, 1)
+
+[node name="a" type="TextEdit" parent="."]
+offset_left = -178.0
+offset_top = -186.0
+offset_right = -134.0
+offset_bottom = -137.0
+text = "45"
+
+[node name="ii" type="TextEdit" parent="."]
+offset_left = 106.0
+offset_top = -188.0
+offset_right = 150.0
+offset_bottom = -139.0
+text = "7
+"
+
+[node name="Node" type="Node" parent="."]
